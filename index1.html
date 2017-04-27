@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.less">
+    <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/myCanvas.js"></script>
+    <script type="text/javascript" src="js/index1.js"></script>
+</head>
+<body>
+    <div class="main-count">
+        <div class="canvas-img-cont" style="display:none;">
+            <div class="img-cont">
+                <img src="images/_edf0f5.png" alt="">
+                <img src="images/1242397_161645075_2.jpg"  alt="">
+            </div>
+            <div class="loading-box">
+                <div class="edit-cont"></div>
+                <div class="animate-loading my-position">读取中</div>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="front-image-canvas" width="450" height="514" class="lower-canvas"></canvas>
+            <canvas id="upperCanvas" width="202" height="381" class="upper-canvas"></canvas>
+        </div>
+        <input id="uploadImage" type="file" name="myPhoto"/>
+    </div>
+    
+</body>
+</html>

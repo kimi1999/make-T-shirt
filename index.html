@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>createJS2 测试</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lib/easeljs-0.8.2.min.js"></script>
+    <script type="text/javascript" src="js/container-plant.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div style="display:none">
+       <img src="images/btn-delete.png" alt="删除">
+       <img src="images/btn-move.png" alt="拖动">
+       <img src="images/btn-scale.png" alt="放大">
+       <img src="images/btn-rotate.png" alt="旋转">
+       <img src="images/dott.png" alt="右下角坐标记录点">
+       <img id="TBgImg" alt="纯色T恤背景">
+       <img id="maskImg" alt="异形图">
+    </div>
+    
+    <!-- 本地图片预览所需 看不见的盒子 -->
+    <div style="width:100px; height:10px; overflow:hidden; position:absolute; left:-200px;">
+       <img id="preImg">
+    </div>
+    <!-- canvas的盒子 -->
+    <div class="canvas-cont">
+        <canvas id="baseCanvas" width="500px" height="600px"></canvas>
+        <canvas id="imgCanvas"></canvas>
+        <canvas id="handleCanvas" width="500px" height="600px"></canvas>
+    </div>
+    
+    <!-- 页面加载动画 -->
+    <section class="loading-cont">
+        <div class="loading-shade"></div>
+        <div class="loading-wrapper">
+            <div class="animate-loading my-position">读取中</div>
+        </div>
+    </section>
+    
+    <!-- 上传图片按钮 -->
+    <div class="btn-cont">
+       <a href="javascript:void(0);" class="upImgBtn">
+            上传图片
+       </a>
+       <input type="file" style="display: none;" class="imgIuput" id="imgInput1">
+    </div>
+   
+   
+</body>
+</html>
